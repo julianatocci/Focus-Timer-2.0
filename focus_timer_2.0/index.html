@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporizador estilo pomodoro">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>FocusTimer</title>
+</head>
+<body>
+    <main>
+        <section id="container-timer">
+            <div class="timer">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span> 
+            </div>
+            <section id="controls">
+                <button data-action="togglePlay" class="ph ph-play-circle"></button>
+                <button data-action="togglePlay" class="ph ph-pause-circle"></button>
+                <button data-action="reset" class="ph ph-stop-circle"></button>
+                <button data-action="increase" class="ph ph-plus-circle"></button>
+                <button data-action="decrease" class="ph ph-minus-circle"></button>
+            </section>
+        </section>
+
+        
+        <section id="soundCards">
+            <button data-action="floresta" class="ph ph-tree" id="botaoFloresta"></button>
+            <button data-action="chuva" class="ph ph-cloud-snow" id="botaoChuva"></button>
+            <button data-action="cafeteria" class="ph ph-storefront" id="botaoCafeteria"></button>
+            <button data-action="lareira" class="ph ph-fire" id="botaoLareira"></button>
+        </section>
+    </main>  
+
+</body>
+</html>
